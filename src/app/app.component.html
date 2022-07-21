@@ -1,4 +1,4 @@
-<mat-table class=" mat-elevation-z8" [dataSource]="(tableDataSource$ | async)!">
+<table mat-table [dataSource] = "(tableDataSource$ | async)!" class=" mat-elevation-z8 table table-striped" >
   
   <ng-container matColumnDef="id">
       <div *matHeaderCellDef>id</div>
@@ -24,4 +24,4 @@
   
   <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
   
-</mat-table>
+</table>
